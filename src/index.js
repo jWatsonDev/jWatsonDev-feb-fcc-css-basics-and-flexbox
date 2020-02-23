@@ -81,14 +81,14 @@ const Presentation = () => (
 			<Heading size={1} fit caps color="white">
 				February 2020
 			</Heading>
-			<Link target="_blank" href="https://github.com/ImBaedin/FCC-January">
+			<Link target="_blank" href="https://github.com/jWatsonDev/jWatsonDev-feb-fcc-css-basics-and-flexbox">
 				<Text fontSize="1.5em" bold caps color="white">
 					View on Github
 				</Text>
 			</Link>
-			<Link target="_blank" href="https://www.braedin.com/FCC-January/complete/">
+			<Link target="_blank" href="https://codepen.io/">
 				<Text fontSize="1.5em" bold caps color="white">
-					Finished project
+					If you don't have CodePen, signup please 🙏
 				</Text>
 			</Link>
 			<Text fontSize="1em" bold color="#505050">
@@ -156,6 +156,7 @@ const Presentation = () => (
 			code={require("raw-loader!./assets/examples/css-basics/styles.example").default}
 			ranges={[
 				{ loc: [0, 500], title: "CSS - Basic stuff you should know" },
+				{ loc: [0, 500], backgroundColor: "#223b57", note: "There are 4 main ways of applying CSS--inline, internal/embedded, external/linked, and imported. Before we get started, let's stop and talk about this. What does this mean? When should you use which? Why?" },
 				{ loc: [4, 7], backgroundColor: "#223b57", note: "Simple but needed stuff. Add a background image. Add a default font. Note how other elements will inherit this font--hence 'cascading' style sheets." },
 				{ loc: [0, 1], backgroundColor: "#223b57", note: "You can see the imported css concept when we import this Google font. Not really a good way to use codepen basic to show how to import your own css files (i.e. imported-css.css in my example project). You really won't be doing this often anyway."},
 				{ loc: [9, 11], backgroundColor: "#223b57", note: "Yeah, I think you are aware of the fact that you can use an external stylesheet to style your css by now. Keep moving..."},
@@ -233,38 +234,25 @@ const Presentation = () => (
 			backgroundColor={"#0d1d2e"}
 			theme={Themes.dracula}
 			lang="css"
-			code={require("raw-loader!./assets/examples/css-basics/styles.example").default}
+			code={require("raw-loader!./assets/examples/flexbox/styles.example").default}
 			ranges={[
-				{ loc: [0, 500], title: "The amazing flexbox" },
-				{ loc: [34, 34], title: "Get started", backgroundColor: "#223b57", note: "a note..." },
-								// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
-				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				{ loc: [4, 9], backgroundColor: "#223b57", note: "Let's create some CSS3 variables. You can read more about it here: https://www.freecodecamp.org/learn and https://www.w3schools.com/css/css3_variables.asp (the latter is probably a quicker assist)"},
+				{ loc: [13, 14], backgroundColor: "#223b57", note: "CSS reset. If we want margin and padding we'll add it. We know what we are doing...kinda. 😕" },
+				{ loc: [12, 12], backgroundColor: "#223b57", note: "From the Mozilla docs--tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width."},
+				{ loc: [17, 21], backgroundColor: "#223b57", note: "We are styling the header--just adding some padding (remember we have box-sizing set to border-box so not added on to width) and centering the text. Note that we are using semantic html...it's all the rage. In short, we aren't just using divs to define the structure of our html, but we are using elements that make sense (e.g. header for a header). You can read more about if you feel inclined--https://www.pluralsight.com/guides/semantic-html and https://guide.freecodecamp.org/html/html5-semantic-elements/"},
+				{ loc: [20, 20], backgroundColor: "#223b57", note: "Just using a CSS variable...sweet huh."},
+				{ loc: [25, 28], backgroundColor: "#223b57", note: "Cool, let's style this semantic Nav and use a CSS variable. Hey, what's the flex thing? By setting display to flex, the nav container becomes flexible. With flex, there is flex-direction, which is a property that defines in which direction the container wants to stack the flex items. It can be set to row or column, with the default (you don't set anything) being row (lines things up horizontally). Note, how this one line of CSS changes everything!"},
+				{ loc: [30, 35], backgroundColor: "#223b57", note: "Nothing special here...just styling the anchors to make them look like buttons. If you have questions, ask? But I think we've done this before, Jack."},
+				{ loc: [37, 40], backgroundColor: "#223b57", note: "Using the CSS hover pseudo selector to style the on hover effect."},
+				{ loc: [44, 47], backgroundColor: "#223b57", note: "You know that flex thing we did for the nav, we also need to do it for the main (semantic html) container so that it too can be a flexible container."},
+				{ loc: [49, 57], backgroundColor: "#223b57", note: "Now, let's add a couple columns. I need a two-column 70/30 percent split column layout. Note those CSS3 variables!"},
+				{ loc: [59, 63], backgroundColor: "#223b57", note: "Just a footer with a CSS3 variable."},
+				{ loc: [66, 68], backgroundColor: "#223b57", note: "Just a 'utility' padding class. We don't need our text right up against the side of our border like that 😬. It's not like we use Android and have no sense of style." },
+				{ loc: [71, 75], backgroundColor: "#223b57", note: "Ever heard of responsive design? It's a buzzword. All it means is that your sites need to look good and all devices, including desktops, phones, you get the point. So, what we are doing here, is we are saying, \"Image, we do not need you being larger than your container, EVER!\" Got it?"},
+				{ loc: [77, 80], backgroundColor: "#223b57", note: "We need them paragraphs to look good so let's add some space between our paragraph text for readability and add back some top/bottom margin. Remember, we removed all default margin/padding in the beginning."},
+				{ loc: [82, 90], backgroundColor: "#223b57", note: "Let's create some image classes for positioning images nicely within text...these floated image classes will allow the text to wrap around the images. Note that we are using clockwise notation to set that margin (space between text and image is what we are mainly concerned about) -> top right bottom left. "},
+				{ loc: [92, 96], backgroundColor: "#223b57", note: "Let's make these images beautiful. We are adding a rounded border, some padding (combined with border, gives a thumbnail effect) and a smidght of shadow (not too much Android users!)."},
+				{ loc: [98, 112], backgroundColor: "#223b57", note: "Whoo hoo! We finished! Ahhh...not yet...we need to think about our mobile users, so...when the screen is 700px wide or less, we know the user must be on a phone. If that's the case, we'll get rid of our rows by setting the flex direction to column (put the boxes on top of each other not side by side). Additionally, we don't want any floated images, so let's destroy the floats and center our images (we alread set them to be block elements, so we'll set the margin on the left and right to be auto. Now, fin!!"}
 			]} />
 		
 		<Slide backgroundColor="#0a0a23">
