@@ -156,7 +156,35 @@ const Presentation = () => (
 			code={require("raw-loader!./assets/examples/css-basics/styles.example").default}
 			ranges={[
 				{ loc: [0, 500], title: "CSS - Basic stuff you should know" },
-				{ loc: [34, 34], title: "Get started", backgroundColor: "#223b57", note: "a note..." }
+				{ loc: [34, 34], title: "Get started", backgroundColor: "#223b57", note: "a note..." },
+								// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
 			]} />
 		<Slide backgroundColor="#0a0a23">
 			<Heading size={1} caps fit color="primary">Horizontal Nav and Simple Toggle</Heading>
@@ -175,10 +203,30 @@ const Presentation = () => (
 			backgroundColor={"#0d1d2e"}
 			theme={Themes.dracula}
 			lang="css"
-			code={require("raw-loader!./assets/examples/css-basics/styles.example").default}
+			code={require("raw-loader!./assets/examples/nav-and-toggle/styles.example").default}
 			ranges={[
 				{ loc: [0, 500], title: "Simple Nav and Toggle" },
-				{ loc: [34, 34], title: "Get started", backgroundColor: "#223b57", note: "a note..." }
+				{ loc: [0, 0], backgroundColor: "#223b57", note: "A typical CSS 'reset' that removes built-in margin/padding for all elements (e.g. The body has built-in margin). When I want padding or margin, I'll add it." },
+				{ loc: [9, 9], backgroundColor: "#223b57", note: "Remove default bullets from unodered list."},
+				{ loc: [10, 10], backgroundColor: "#223b57", note: "Set the background color for your container. Meh. You know what this is doing."},
+				{ loc: [14, 14], backgroundColor: "#223b57", note: "Use inline-block to display list items horizontally instead of vertically. If interested, you can read about the differences inline-block, inline, and block here: https://www.w3schools.com/css/css_inline-block.asp."},
+				{ loc: [18, 18], backgroundColor: "#223b57", note: "Adding display block here is basically causing a links to behave as buttons, filling up entire vertical space."},
+				{ loc: [20, 20], backgroundColor: "#223b57", note: "Set vertical padding (top/bottom) to 14px and horizontal (right/left) padding to 16px."},
+				{ loc: [21, 21], backgroundColor: "#223b57", note: "Remove default underline. If you use an Android, you may think it looks good."},
+				{ loc: [24, 26], backgroundColor: "#223b57", note: "CSS pseudo selector -> Let's change background on hover."},
+				{ loc: [35, 39], backgroundColor: "#223b57", note: "Using margin to give us some space. Setting the pointer to let the user know that he/she can clicker here. Nothing crazy going on."},
+				{ loc: [41, 45], backgroundColor: "#223b57", note: "We're just making the div visable here--big red block"}
+			]} />
+
+<CodeSlide
+			backgroundColor={"#0d1d2e"}
+			theme={Themes.dracula}
+			lang="js"
+			code={require("raw-loader!./assets/examples/nav-and-toggle/index.example").default}
+			ranges={[
+				{ loc: [0, 500], title: "Just a bit of JS. That's all" },
+				{ loc: [18, 19], backgroundColor: "#223b57", note: "Create handles to reach in and changes 'things' in the DOM. Use query selector to grab html elements by their respective IDs."},
+				{ loc: [20, 20], backgroundColor: "#223b57", note: "Add a click event listener for your toggle. Then use a terniary opoerator to toggle display block and none. Simple, right?"},
 			]} />
 
 		<Slide backgroundColor="#0a0a23">
@@ -201,7 +249,35 @@ const Presentation = () => (
 			code={require("raw-loader!./assets/examples/css-basics/styles.example").default}
 			ranges={[
 				{ loc: [0, 500], title: "The amazing flexbox" },
-				{ loc: [34, 34], title: "Get started", backgroundColor: "#223b57", note: "a note..." }
+				{ loc: [34, 34], title: "Get started", backgroundColor: "#223b57", note: "a note..." },
+								// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
+				// { loc: [10, 0], backgroundColor: "#223b57", note: ""},
 			]} />
 		
 		<Slide backgroundColor="#0a0a23">

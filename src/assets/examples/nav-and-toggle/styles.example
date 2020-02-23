@@ -1,4 +1,4 @@
-* { /* typical "reset" -> removes built-in margin/padding */
+* { 
     margin: 0;
     padding: 0;
 }
@@ -7,22 +7,22 @@
  * START of NAV bar
  */
 ul {
-  list-style-type: none; /* remove default bullets */
+  list-style-type: none; 
   background-color: #333; 
 }
 
 li {
-  display: inline-block; /* good explanation -> https://www.w3schools.com/css/css_inline-block.asp */
+  display: inline-block;
 }
 
 li a {
   display: block; 
-  color: white; /* change link color */
-  padding: 14px 16px; /* set vertical padding to 14px and horizontal padding to 16px */
-  text-decoration: none; /* remove default underline */
+  color: white; 
+  padding: 14px 16px; 
+  text-decoration: none; 
 }
 
-li a:hover { /* css pseudo selector -> change background on hover */
+li a:hover { 
   background-color: #111; 
 }
 /*
