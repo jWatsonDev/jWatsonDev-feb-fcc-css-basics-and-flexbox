@@ -142,7 +142,7 @@ const Presentation = () => (
 			<UnorderedList>
 				<ListItem>
 					<Appear elementNum={0}>
-						Clone this "CSS Basics" CodePen
+						Clone this <a href="https://codepen.io/jwatson2pt0/pen/rNVWgpY" target="_blank" style={{ color: '#fff' }}>"CSS Basics" CodePen</a>
 					</Appear>
 					<Appear elementNum={1}>Now, let's get started!</Appear>
 				</ListItem>
@@ -163,7 +163,7 @@ const Presentation = () => (
 			<UnorderedList>
 				<ListItem>
 					<Appear elementNum={0}>
-						Clone this basic "Nav and Toggle" CodePen
+						Clone this basic <a href="https://codepen.io/jwatson2pt0/pen/YzXpbaM" target="_blank" style={{ color: '#fff' }}>"Nav and Toggle" CodePen</a>
 					</Appear>
 					<Appear elementNum={1}>Now, "Jocko" it.</Appear>
 				</ListItem>
@@ -186,7 +186,7 @@ const Presentation = () => (
 			<UnorderedList>
 				<ListItem>
 					<Appear elementNum={0}>
-						Clone this "CSS Flexbox" CodePen
+						Clone this <a href="https://codepen.io/jwatson2pt0/pen/rNVWgvp" target="_blank" style={{ color: '#fff' }}>"CSS Flexbox" CodePen</a>
 					</Appear>
 					<Appear elementNum={1}>Get after it.</Appear>
 				</ListItem>
